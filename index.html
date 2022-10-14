@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atención al Cliente</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="img/logo-generico.png" alt="logo" class="logo">
+    </header>
+
+    <div class="container-form">
+
+        <h1 class="title-form">
+            Registro de Vacaciones
+            <hr>
+        </h1>
+
+        <form id="registerForm">
+            <div class="field">
+                <label for="name">Nombre y Apellidos</label>
+                <input type="text" name="name" id="name">
+                <div class="invalid-feedback d-none text-left">
+                    Ingresa un nombre válido.
+                </div>
+            </div>
+            <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <div class="invalid-feedback d-none text-left">
+                    Ingresa un e-mail válido.
+                </div>
+            </div>
+            <div class="field">
+                <label for="startDate">Fecha de inicio</label>
+                <input type="date" name="startDate" id="startDate">
+                <div class="invalid-feedback d-none text-left">
+                    Ingresa una fecha válida.
+                </div>
+            </div>
+            <div class="field">
+                <label for="endDate">Fecha de fin</label>
+                <input type="date" name="endDate" id="endDate">
+                <div class="invalid-feedback d-none text-left">
+                    Ingresa una fecha válida.
+                </div>
+            </div>
+            <div class="field d-none">
+                <label for="replacementName">Reemplazo</label>
+                <input type="text" name="replacementName" id="replacementName">
+            </div>
+            <button type="submit" class="btn submit-button d-block">Registrar</button>
+        </form>
+    </div>
+
+    <footer></footer>
+
+    <!-- Librería EmailJs para envío de correo -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('AlwI_rF2vbav1HyKi')
+    </script>
+
+    <script type="module" src='./js/main.js'></script>
+
+</body>
+
+</html>

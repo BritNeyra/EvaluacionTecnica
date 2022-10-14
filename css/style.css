@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(to right top, #e9fad1 0%, #61C4DF 100%);
+  min-height: calc(100vh);
+  height: 100%;
+}
+
+header {
+  padding: 24px 72px;
+  background-color: rgb(246, 246, 246);
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+}
+
+.logo {
+  width: 200px;
+}
+
+.container-form {
+  width: 600px;
+  margin: 80px auto 80px auto;
+  background-color: rgba(246, 246, 246, 0.75);
+  box-shadow: -2px -2px 25px #ccc;
+  padding: 56px 64px 56px 64px;
+  border-radius: 8px;
+}
+
+.title-form {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #676a6c;
+  margin-bottom: 54px;
+}
+
+hr {
+  width: 80px;
+  border-top: 8px solid #47c9b5 !important;
+  border-radius: 8px;
+  opacity: 1 !important;
+  margin: 1rem auto !important;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0 auto 1.6rem;
+}
+
+input {
+  color: #6c757d;
+  padding: 0.5rem 1rem 0.4rem 0.2rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #47c9b5;
+}
+
+.input-invalid {
+  border-bottom: 1px solid #dc3545;
+}
+
+label {
+  font-size: 15px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.submit-button {
+  margin: 48px 0 0 0;
+  width: 200px;
+  border: 2px solid #47c9b5 !important;
+  color: #47c9b5 !important;
+  padding: 10px 32px !important;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #47c9b5 !important;
+  color: #fff !important;
+}
+
+.submit-button:focus {
+  background-color: #47c9b5 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 16px;
+    }
+  .logo {
+    width: 140px;
+  }
+  .container-form {
+    width: 95%;
+    padding: 32px 24px;
+    margin: 16px auto;
+  }
+
+  .title-form {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  hr {
+    border-top: 4px solid #47c9b5 !important;
+  }
+}
